@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 import harvardArt from "./data/harvardArt";
 import "./components/GalleryNavigation/GalleryNavigation.css";
+import Homepage from "./Homepage";
 
 const GalleryNavigation = props => {
 
@@ -16,8 +17,9 @@ const GalleryNavigation = props => {
     return (
         <nav>
             <h1>Galleries</h1>
+            
             <NavLink to="/">
-                <h1>Home Page</h1>
+                <Homepage />
             </NavLink> 
 
             <ul>
