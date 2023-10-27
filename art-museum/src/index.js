@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {BrowserRouter} from 'react-router-dom';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -12,8 +13,12 @@ import App from './App';
   
 // );
 
-const Root = () => { 
-  return <App />
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )
 }
 
 const root = document.getElementById('root');
